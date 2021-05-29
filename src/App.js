@@ -6,11 +6,9 @@ import {
   Route,
 } from "react-router-dom";
 
-import Layout from "./views/components/layout";
+import Layout from "./views/screens/layout";
 import ScreenHome from "./views/screens/home";
-import ScreenLinkOne from "./views/screens/linkOne";
-import ScreenLinkTwo from "./views/screens/linkTwo";
-import ScreenLinkThree from "./views/screens/linkThree";
+import ScreenAlgorithms from "./views/screens/algorithms";
 
 function App() {
   return (
@@ -19,9 +17,7 @@ function App() {
         <Layout>
           <Switch>
             <Route path="/" exact component={ScreenHome} />
-            <Route path="/linkOne" component={ScreenLinkOne} />
-            <Route path="/linkTwo" component={ScreenLinkTwo} />
-            <Route path="/linkThree" component={ScreenLinkThree} />
+            <Route path="/algoritmos" component={ScreenAlgorithms} />
           </Switch>
         </Layout>
       </Router>
